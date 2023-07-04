@@ -1,6 +1,7 @@
 import { Box, Flex } from "@chakra-ui/react";
 import TopNav from "../../components/Topnav";
 import Sidenav from "../../components/Sidenav";
+import DashboardLayout from "../../components/DashboardLayout";
 
 const Dashboard = () => {
   return (
@@ -9,6 +10,7 @@ const Dashboard = () => {
         <Sidenav />
         <Box flexGrow={1}>
           <TopNav />
+          <DashboardLayout />
         </Box>
       </Flex>
     </div>
