@@ -10,12 +10,12 @@ import {
 } from "@chakra-ui/react";
 import { BiUserCircle } from "react-icons/bi";
 
-const TopNav = () => {
+const TopNav = ({ title }) => {
   return (
     <Box>
       <HStack maxW="80rem" h="16" justify="space-between" px="32" mx="auto">
         <Heading fontWeight="medium" fontSize="28px">
-          Dashboard
+          {title}
         </Heading>
         <Menu>
           <MenuButton>
