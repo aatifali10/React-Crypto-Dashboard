@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Container, Flex } from "@chakra-ui/react";
 import TopNav from "./TopNav";
 import Sidenav from "./Sidenav";
 import React from "react";
@@ -9,7 +9,9 @@ const DashboardLayout = ({ title, children }) => {
       <Sidenav />
       <Box flexGrow={1}>
         <TopNav title={title} />
-        <Box px="4">{children}</Box>
+        <Container maxW="70rem" bg="red">
+          {children}
+        </Container>
       </Box>
     </Flex>
   );

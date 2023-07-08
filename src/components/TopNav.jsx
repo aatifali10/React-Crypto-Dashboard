@@ -13,7 +13,7 @@ import { BiUserCircle } from "react-icons/bi";
 const TopNav = ({ title }) => {
   return (
     <Box>
-      <HStack maxW="80rem" h="16" justify="space-between" px="32" mx="auto">
+      <HStack maxW="70rem" h="16" justify="space-between" mx="auto">
         <Heading fontWeight="medium" fontSize="28px">
           {title}
         </Heading>
