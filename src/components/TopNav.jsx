@@ -8,18 +8,26 @@ import {
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
-import { BiUserCircle } from "react-icons/bi";
+import { FaBars, FaUserTie } from "react-icons/fa";
 
-const TopNav = ({ title }) => {
+const TopNav = ({ title, onOpen }) => {
   return (
-    <Box>
+    <Box px="4">
       <HStack maxW="70rem" h="16" justify="space-between" mx="auto">
+        <Icon
+          as={FaBars}
+          onClick={onOpen}
+          display={{
+            base: "block",
+            lg: "none",
+          }}
+        />
         <Heading fontWeight="medium" fontSize="28px">
           {title}
         </Heading>
         <Menu>
           <MenuButton>
-            <Icon fontSize="24px" fontWeight="medium" as={BiUserCircle} />
+            <Icon fontSize="24px" as={FaUserTie} />
           </MenuButton>
           <MenuList>
             <MenuItem>Logout</MenuItem>
