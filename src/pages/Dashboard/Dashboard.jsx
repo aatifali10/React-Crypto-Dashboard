@@ -3,6 +3,7 @@ import DashboardLayout from "../../components/DashboardLayout";
 import PortfolioSecction from "./components/PortfolioSecction";
 import PriceSection from "./components/PriceSection";
 import { Grid, GridItem } from "@chakra-ui/react";
+import Transactions from "./components/Transaction";
 
 const Dashboard = ({ children }) => {
   return (
@@ -19,6 +20,9 @@ const Dashboard = ({ children }) => {
         </GridItem>
         <GridItem colSpan={1}>
           <PriceSection />
+        </GridItem>
+        <GridItem colSpan={1}>
+          <Transactions />
         </GridItem>
       </Grid>
     </DashboardLayout>
