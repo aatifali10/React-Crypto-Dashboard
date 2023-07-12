@@ -1,10 +1,11 @@
 import DashboardLayout from "../../components/DashboardLayout";
+import ContactCard from "./components/ContactCard";
 import SupportCard from "./components/SupportCard";
 
 const Support = () => {
   return (
     <DashboardLayout>
-      <SupportCard />
+      <SupportCard leftComponent={<ContactCard />} />
     </DashboardLayout>
   );
 };
