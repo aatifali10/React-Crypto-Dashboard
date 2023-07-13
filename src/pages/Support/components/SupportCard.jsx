@@ -1,26 +1,42 @@
-import { Flex, Icon, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Card,
+  Checkbox,
+  Flex,
+  FormControl,
+  FormLabel,
+  HStack,
+  Icon,
+  Input,
+  Stack,
+  Text,
+  Textarea,
+} from "@chakra-ui/react";
+import React from "react";
 import { IoMdMail } from "react-icons/io";
-
-const SupportCard = ({ leftComponent }) => {
+const SupportCard = ({ leftComponent, icon, title, text }) => {
   return (
     <Flex
       gap={6}
+      justify="space-between"
       flexDir={{
         base: "column",
         xl: "row",
       }}
     >
       <Stack maxW="24rem">
-        <Icon as={IoMdMail} boxSize={6} color="p.purple" />
-        <Text fontWeight="mediym" as="h1" textStyle="h1">
-          Contact Us
+        <Icon as={icon} boxSize={6} color="p.purple" />
+        <Text fontWeight="medium" as="h1" textStyle="h1">
+          {title}
         </Text>
         <Text fontSize="sm" color="black.60">
-          Have a question or just want to know more? Feel free to reach out to
-          us.
+          {text}
         </Text>
       </Stack>
-      {leftComponent}
+      <Box maxW="550px" w="full">
+        {leftComponent}
+      </Box>
     </Flex>
   );
 };
