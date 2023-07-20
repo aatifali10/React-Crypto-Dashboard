@@ -7,6 +7,7 @@ import InfoCard from "../Dashboard/components/InfoCard";
 import { Stack } from "@chakra-ui/react";
 const Support = () => {
   return (
+    // dashboard
     <DashboardLayout>
       <Stack spacing="5rem" pb={2}>
         <SupportCard
